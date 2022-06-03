@@ -1,0 +1,50 @@
+@use 'src/styles/constants/colors';
+
+@mixin listItem {
+  &::before {
+    font-size: 13px;
+    line-height: 1.6;
+    color: colors.$BIG_TITLE;
+    content: '추천 검색어';
+  }
+
+  .item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 8px 10px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgba(colors.$BLUE, 0.2);
+    }
+
+    .name {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: colors.$TEXT_DB;
+
+      mark {
+        font-weight: bold;
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+.listContainer {
+  position: absolute;
+  top: 60px;
+  z-index: 100;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  height: 12rem;
+  padding: 24px 24px 16px;
+  margin-top: 8px;
+  overflow: scroll;
+  background-color: colors.$WHITE;
+  border-radius: 20px;
+
+  @include listItem;
+}

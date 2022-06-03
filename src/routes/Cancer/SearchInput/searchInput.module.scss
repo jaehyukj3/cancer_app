@@ -1,0 +1,42 @@
+@use 'src/styles/constants/colors';
+
+.searchInput {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  background-color: colors.$WHITE;
+  border-radius: 42px;
+  box-shadow: 0 4px 10px colors.$SHADOW;
+
+  .inputContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 56px;
+    padding: 20px 34px;
+
+    .input {
+      flex: 1;
+      font-size: 1.125rem;
+      color: colors.$TEXT_DB;
+
+      &::placeholder {
+        color: colors.$TEXT;
+      }
+    }
+
+    .button {
+      cursor: pointer;
+      border-radius: 42px;
+
+      &:hover {
+        fill: colors.$BUTTON_HOVER_BG;
+        transition-duration: 0.2s;
+        transition-property: all;
+      }
+    }
+  }
+}
