@@ -1,6 +1,7 @@
+import { useState } from 'react'
+
 import Chart from './Chart'
 import styles from './cancerChart.module.scss'
-import { useState } from 'react'
 
 const CancerChart = () => {
   const [valueType, setValueType] = useState<string>('발생비율')
@@ -14,6 +15,7 @@ const CancerChart = () => {
   const handleAsrClick = () => {
     setValueType('연령표준화발생률')
   }
+
   return (
     <main className={styles.cancerChart} id='main'>
       <header className={styles.pageHeader}>
