@@ -1,7 +1,4 @@
 @use '/src/styles/constants/colors';
-@use '/src/styles/constants/levels';
-@use '/src/styles/mixins/flexbox';
-@use '/src/styles/mixins/position';
 
 .resultList {
   margin-top: 40px;
@@ -20,12 +17,12 @@
     height: 100px;
     padding: 24px 0;
     margin-top: 80px;
-    color: colors.$TEXT_DB;
+    color: colors.$PRIMARY;
 
     dl {
       width: 100%;
       padding: 20px;
-      background-color: colors.$LIST;
+      background-color: colors.$BG_SUB;
       border-radius: 20px;
 
       .contentWrapper {
@@ -35,7 +32,7 @@
         font-size: 14px;
         line-height: 16px;
         color: colors.$TEXT_DB;
-        border-bottom: 1px solid colors.$BORDER;
+        border-bottom: 1px solid colors.$PRIMARY;
 
         + .contentWrapper {
           margin-top: 10px;
