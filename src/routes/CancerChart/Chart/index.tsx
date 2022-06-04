@@ -39,7 +39,6 @@ const Chart = ({ valueType }: IProps) => {
               stroke: 'transparent',
               strokeWidth: 3,
             },
-
             labels: { fill: 'white', fontSize: '14px', fontWeight: 'bold' },
           }}
           barWidth={6}
