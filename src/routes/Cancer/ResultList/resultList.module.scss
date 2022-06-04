@@ -32,9 +32,10 @@
         display: flex;
         align-items: flex-end;
         justify-content: space-between;
-        font-size: 12px;
-        line-height: 14px;
+        font-size: 14px;
+        line-height: 16px;
         color: colors.$TEXT_DB;
+        border-bottom: 1px solid colors.$BORDER;
 
         + .contentWrapper {
           margin-top: 10px;
