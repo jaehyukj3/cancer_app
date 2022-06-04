@@ -16,17 +16,16 @@ const ResultList = () => {
             <dl>
               <div className={styles.contentWrapper}>
                 <dt>암종명(CANCER_NAME)</dt>
-
                 <dd>{item.CANCER_NAME}</dd>
               </div>
+
               <div className={styles.contentWrapper}>
                 <dt>암종분류(CANCER_PART)</dt>
-
                 <dd>{item.CANCER_PART}</dd>
               </div>
+
               <div className={styles.contentWrapper}>
                 <dt>암종연령대(CANCER_AGE)</dt>
-
                 <dd>{item.CANCER_AGE}</dd>
               </div>
             </dl>
