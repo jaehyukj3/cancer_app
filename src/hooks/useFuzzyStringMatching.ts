@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 import { useRecoilValue, useSetRecoilState } from 'hooks/state'
 
 import { searchListState, searchStringState } from 'recoil/cancer'
-import { createFuzzyMatcher, cancerData } from 'utils'
+import { cancerData, createFuzzyMatcher } from 'utils'
 
 export const useFuzzyStringMatching = () => {
   const setSearchList = useSetRecoilState(searchListState)

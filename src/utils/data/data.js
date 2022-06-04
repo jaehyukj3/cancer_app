@@ -1223,16 +1223,4 @@ export const cancerData = [
     USE_YN: 'Y',
     DEL_YN: 'N',
   },
-  {
-    BOARD_SEQ: 8723941,
-    CANCER_PART: 'test',
-    CANCER_NAME: 'test',
-    CANCER_AGE: '성인',
-    REG_DATE: '2019-08-06 12:04',
-    FILE_ORG: '',
-    FILE_PATH: '',
-    FILE_NM: '',
-    USE_YN: 'Y',
-    DEL_YN: 'Y',
-  },
 ]

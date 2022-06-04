@@ -33,9 +33,10 @@
     .button {
       cursor: pointer;
       border-radius: 42px;
+      fill: colors.$PRIMARY;
 
       &:hover {
-        fill: colors.$BUTTON_HOVER_BG;
+        fill: colors.$PRIMARY_HOVER;
         transition-duration: 0.2s;
         transition-property: all;
       }

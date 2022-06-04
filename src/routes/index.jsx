@@ -1,7 +1,9 @@
 import { Routes, Route } from 'react-router-dom'
-import styles from './Routes.module.scss'
 
+import TabBar from 'components/TabBar'
 import Cancer from './Cancer'
+import CancerChart from './CancerChart'
+import styles from './Routes.module.scss'
 
 const App = () => {
   return (
@@ -9,8 +11,10 @@ const App = () => {
       <div className={styles.app}>
         <Routes>
           <Route path='/' element={<Cancer />} />
+          <Route path='/cancerchart' element={<CancerChart />} />
           <Route path='*' element={<div>404</div>} />
         </Routes>
+        <TabBar />
       </div>
     </div>
   )

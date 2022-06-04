@@ -1,9 +1,22 @@
 @use '/src/styles/constants/colors';
 
-.app {
+.appWrapper {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
   height: 800px;
+
+  .app {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 360px;
+    height: 720px;
+    overflow: hidden;
+    background-color: colors.$BG;
+    border: 2px solid colors.$BORDER;
+    border-radius: 60px;
+  }
 }
