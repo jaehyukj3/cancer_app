@@ -18,7 +18,7 @@ Create React App, TypeScript, Sass(SCSS), React-router-dom, Recoil, lodash, clas
 
 ### 1) Netlify로 배포된 페이지
 
-https://aquamarine-raindrop-bc4e10.netlify.app/cancerchart
+https://aquamarine-raindrop-bc4e10.netlify.app/
 
 전반적인 기능을 모두 사용해볼 수 있도록 Netlify로 배포하였습니다.
 
@@ -136,9 +136,9 @@ src
 
   - Custom hooks를 모아둔 폴더입니다.
 
-- 📁pages
+- 📁routes
 
-  - 라우터를 기준으로 각각의 페이지를 모아둔 폴더입니다.
+  - 라우팅 대상을 모아둔 폴더입니다.
 
 - 📁recoil
 
@@ -162,6 +162,10 @@ src
 
 ### 암 검색
 
+![cancer](https://user-images.githubusercontent.com/87752210/172015763-968a13b6-54e1-4d49-af0c-95481f1294ce.gif)
+
+#### 추천 검색어
+
 한글 fuzzystring 추천 검색어 기능을 구현하였습니다.
 
 한국어의 경우 초성, 중성, 종성이 합쳐져 하나의 온전한 문자를 완성하는 특징이 있어 이와 다른 언어에서 사용되는 방식을 그대로 적용할 수 없어 관련 자료를 찾아 다음 링크를 참고했습니다.
@@ -174,10 +178,20 @@ src
 여기에 종성에만 사용가능한 ‘ㄳ’ 같은 경우를 고려하고 정규식에 사용되는 특수문자 처리를 위해 Lodash의 escapeRegExp() Method를 사용해 정규식을 생성하여 fuzzy string을 구현하였습니다.
 그리고 split() 메소드와 mark 태그를 이용해 사용자가 입력한 질환명과 일치하는 부분을 볼드처리하였고, 입력된 검색어에 trim()과 replaceAll() 을 사용해 공백을 제거하여 띄어쓰기가 일치하지 않을 경우에도 검색 할 수 있게 구현하였습니다.
 
-### Recoil
+#### Recoil
 
 검색어, 추천 검색어 리스트, 검색 결과 리스트에 Recoil을 이용하여 상태를 관리함으로써 다른 페이지로 이동 후 돌아오더라도 검색 결과가 유지될 수 있게 구현하였습니다.
 
 ### 암 차트
 
+![cancerchart](https://user-images.githubusercontent.com/87752210/172015769-695a491b-32d7-4b24-b16f-49c0ca14c09e.gif)
+
 Victory를 이용해 암종 별 발생률, 조발생률, 연령표준화 발생률 차트를 구현하였습니다. 항목 수가 많아 툴팁을 이용해 자세한 정보를 확인할 수 있게 하였습니다.
+
+## 느낀 점
+
+완전한 자유 과제였기에 무엇을 구현할지 고민이 많이 되었고 과제에 사용할 데이터를 찾는 데 많은 시간이 소요되었습니다.
+
+팀 과제와 기간이 겹쳐 틈틈이 작업해야 했으며 한 번에 여러 프로젝트를 진행하는 것의 어려움을 느낄 수 있었습니다.
+
+자신의 실력을 돌아볼 수 있는 경험이었습니다. 감사합니다.
