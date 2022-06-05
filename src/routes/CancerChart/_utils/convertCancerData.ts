@@ -4,8 +4,8 @@ const getConvertData = (valueType: string) => {
   const rateData = cancerRateData.map((item) => {
     return {
       x: item.code.split('(')[0],
-      y: item.rate,
-      label: `${item.code.split('(')[0]}: ${item.rate}%`,
+      y: item.incidence_rate,
+      label: `${item.code.split('(')[0]}: ${item.incidence_rate}%`,
     }
   })
   const crData = cancerRateData.map((item) => {
