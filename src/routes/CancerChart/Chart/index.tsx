@@ -35,7 +35,7 @@ const Chart = ({ valueType }: IProps) => {
           data={chartData}
           style={{
             data: {
-              fill: '#23506b',
+              fill: '#3e498c',
               stroke: 'transparent',
               strokeWidth: 3,
             },
@@ -45,7 +45,7 @@ const Chart = ({ valueType }: IProps) => {
           labelComponent={
             <VictoryTooltip
               cornerRadius={5}
-              flyoutStyle={{ fill: '#23506b' }}
+              flyoutStyle={{ fill: '#3e498c' }}
               flyoutWidth={160}
               flyoutHeight={40}
               flyoutPadding={5}

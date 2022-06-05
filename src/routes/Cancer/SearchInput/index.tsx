@@ -1,5 +1,6 @@
 import { ChangeEvent, FormEvent } from 'react'
 import { useRecoilValue, useRecoilState, useSetRecoilState } from 'hooks/state'
+
 import SearchList from '../SearchList'
 import { MagnifierIcon } from 'assets'
 import { searchListState, searchStringState, cancerListState } from 'recoil/cancer'
@@ -37,7 +38,6 @@ const SearchInput = () => {
     <div className={styles.searchInput}>
       <form className={styles.inputContainer} onSubmit={handleSubmit}>
         <input
-          type='search'
           className={styles.input}
           placeholder='검색어를 입력해 주세요.'
           value={searchString}

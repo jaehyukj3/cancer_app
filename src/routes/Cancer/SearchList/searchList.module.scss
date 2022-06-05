@@ -4,7 +4,7 @@
   &::before {
     font-size: 13px;
     line-height: 1.6;
-    color: colors.$TEXT;
+    color: colors.$TEXT_SUB;
     content: '추천 검색어';
   }
 
@@ -16,16 +16,17 @@
     cursor: pointer;
 
     &:hover {
-      background-color: rgba(colors.$BLUE, 0.2);
+      background-color: rgba(colors.$WHITE, 0.2);
     }
 
     .name {
       font-size: 1rem;
       line-height: 1.6;
-      color: colors.$TEXT_DB;
+      color: colors.$TEXT;
 
       mark {
         font-weight: bold;
+        color: colors.$TEXT;
         background-color: transparent;
       }
     }
@@ -43,7 +44,7 @@
   padding: 24px 24px 16px;
   margin-top: 8px;
   overflow: scroll;
-  background-color: colors.$WHITE;
+  background-color: colors.$BG_SUB;
   border-radius: 20px;
 
   @include listItem;
