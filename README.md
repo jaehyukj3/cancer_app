@@ -162,6 +162,7 @@ src
 
 ### 암 검색
 
+![cancer](https://user-images.githubusercontent.com/87752210/172032026-661cba44-a33c-45aa-9aeb-d9eb8f45895f.gif)
 
 #### 추천 검색어
 
@@ -183,6 +184,7 @@ src
 
 ### 암 차트
 
+![cancerchart](https://user-images.githubusercontent.com/87752210/172032031-75168b67-67b1-4f62-8697-1914a849361a.gif)
 
 Victory를 이용해 암종 별 발생률, 조발생률, 연령표준화 발생률 차트를 구현하였습니다. 항목 수가 많아 툴팁을 이용해 자세한 정보를 확인할 수 있게 하였습니다.
 
