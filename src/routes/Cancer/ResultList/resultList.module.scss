@@ -17,7 +17,6 @@
     height: 100px;
     padding: 24px 0;
     margin-top: 80px;
-    color: colors.$PRIMARY;
 
     dl {
       width: 100%;
@@ -31,7 +30,7 @@
         justify-content: space-between;
         font-size: 14px;
         line-height: 16px;
-        color: colors.$TEXT_DB;
+        color: colors.$TEXT;
         border-bottom: 1px solid colors.$PRIMARY;
 
         + .contentWrapper {
