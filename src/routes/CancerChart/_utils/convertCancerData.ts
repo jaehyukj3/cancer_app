@@ -1,13 +1,6 @@
 import { cancerRateData } from 'utils/data/rateData'
 
 const getConvertData = (valueType: string) => {
-  const rateData = cancerRateData.map((item) => {
-    return {
-      x: item.code.split('(')[0],
-      y: item.incidence_rate,
-      label: `${item.code.split('(')[0]}: ${item.incidence_rate}%`,
-    }
-  })
   const crData = cancerRateData.map((item) => {
     return {
       x: item.code.split('(')[0],
@@ -23,9 +16,8 @@ const getConvertData = (valueType: string) => {
     }
   })
 
-  if (valueType === '발생비율') return rateData
-  if (valueType === '조발생률') return crData
-  return asrData
+  if (valueType === '연령표준화발생률') return asrData
+  return crData
 }
 
 export default getConvertData
