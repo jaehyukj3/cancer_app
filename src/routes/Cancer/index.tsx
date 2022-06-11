@@ -9,7 +9,7 @@ const Cancer = () => {
         <h1 className={styles.pageTitle}>암 검색</h1>
       </header>
       <SearchInput />
-      <div className={styles.resultWrapper}>
+      <div id='resultWrapper' className={styles.resultWrapper}>
         <ResultList />
       </div>
     </main>
