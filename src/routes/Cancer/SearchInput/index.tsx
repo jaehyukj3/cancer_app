@@ -25,13 +25,15 @@ const SearchInput = () => {
         }
       })
     )
-    const element = document.getElementById('main')
+    const element = document.getElementById('resultWrapper')
     if (element) element.scrollTop = 0
     setSearchString('')
   }
 
   const onChange = (e: ChangeEvent<HTMLInputElement>) => {
     setSearchString(e.currentTarget.value)
+    const element = document.getElementById('listContainer')
+    if (element) element.scrollTop = 0
   }
 
   return (

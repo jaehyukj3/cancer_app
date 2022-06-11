@@ -18,7 +18,7 @@ const SearchList = () => {
   }
 
   return (
-    <ul role='menu' className={styles.listContainer} style={{ display: isListVisible }}>
+    <ul id='listContainer' role='menu' className={styles.listContainer} style={{ display: isListVisible }}>
       {searchList?.map((item: ICancer, idx: number) => {
         const key = `${item.CANCER_NAME}-${idx}`
         return (
