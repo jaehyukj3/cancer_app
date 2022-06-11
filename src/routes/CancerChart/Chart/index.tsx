@@ -1,4 +1,4 @@
-import { VictoryChart, VictoryTheme, VictoryTooltip, VictoryBar, VictoryAxis } from 'victory'
+import { VictoryChart, VictoryTheme, VictoryTooltip, VictoryBar, VictoryAxis, VictoryLabel } from 'victory'
 
 import getConvertData from '../_utils/convertCancerData'
 
@@ -18,6 +18,7 @@ const Chart = ({ valueType }: IProps) => {
           onLoad: { duration: 1000 },
         }}
         height={500}
+        domainPadding={{ x: 10 }}
       >
         <VictoryAxis
           tickFormat={(datum, index) => {
@@ -25,9 +26,24 @@ const Chart = ({ valueType }: IProps) => {
             return `${datum}`
           }}
           style={{
-            ticks: { stroke: 'transparent' },
-            grid: { stroke: 'transparent' },
-            tickLabels: { fontSize: 12, padding: 5, fill: '#94a2ad' },
+            ticks: { stroke: 'none' },
+            grid: { stroke: 'none' },
+            tickLabels: { fontSize: 12, padding: 5, fill: '#919296' },
+          }}
+        />
+
+        <VictoryAxis
+          dependentAxis
+          tickLabelComponent={<VictoryLabel dx={-10} />}
+          orientation='left'
+          tickFormat={(datum) => {
+            return `${datum}%`
+          }}
+          style={{
+            axis: { display: 'none' },
+            ticks: { display: 'none' },
+            grid: { stroke: 'none' },
+            tickLabels: { fontSize: 12, padding: 5, fill: '#919296' },
           }}
         />
 
@@ -39,7 +55,7 @@ const Chart = ({ valueType }: IProps) => {
               stroke: 'transparent',
               strokeWidth: 3,
             },
-            labels: { fill: 'white', fontSize: '14px', fontWeight: 'bold' },
+            labels: { fill: 'white', fontSize: '14px' },
           }}
           barWidth={6}
           labelComponent={
